@@ -35,7 +35,6 @@ if __name__ == "__main__":
         input_variables=["information"], template=summary_template
     )
     #OPENAI_API_KEY = cliff_pkg.cliff_get_env('OPENAI_API_KEY')
-    ##print('$Env:OPENAI_API_KEY = "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"')
  
     llm = ChatOpenAI(temperature=0, model_name=MODEL_NAME)
     chain = LLMChain(llm=llm, prompt=summary_prompt_template)
